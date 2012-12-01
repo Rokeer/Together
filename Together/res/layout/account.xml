@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/white">
+  <TextView
+  	android:id="@+id/idLabel"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:layout_alignParentLeft="true"
+  	android:textColor="@color/blue"
+  	android:text="ID:"
+  	android:textStyle="bold"
+  	android:textSize="20px"
+  />
+  <EditText
+  	android:id="@+id/idText"
+  	android:layout_width="240px"
+  	android:layout_height="wrap_content"
+  	android:layout_below="@id/idLabel"
+  	android:layout_alignLeft="@id/idLabel"
+  />
+  <TextView
+  	android:id="@+id/pwdLabel"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:layout_below="@id/idText"
+  	android:layout_alignLeft="@id/idText"
+  	android:textColor="@color/blue"
+  	android:text="Passward:"
+  	android:textStyle="bold"
+  	android:textSize="20px"
+  />
+  <EditText
+  	android:id="@+id/pwdText"
+  	android:password="true"
+  	android:layout_width="240px"
+  	android:layout_height="wrap_content"
+  	android:layout_below="@id/pwdLabel"
+  	android:layout_alignLeft="@id/pwdLabel"
+  />
+  
+  <TextView
+  	android:id="@+id/verpwdLabel"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:layout_below="@id/pwdText"
+  	android:layout_alignLeft="@id/pwdText"
+  	android:textColor="@color/blue"
+  	android:text="Passward:"
+  	android:textStyle="bold"
+  	android:textSize="20px"
+  />
+  <EditText
+  	android:id="@+id/verpwdText"
+  	android:password="true"
+  	android:layout_width="240px"
+  	android:layout_height="wrap_content"
+  	android:layout_below="@id/verpwdLabel"
+  	android:layout_alignLeft="@id/verpwdLabel"
+  />
+  
+  
+  <Button
+    android:id="@+id/submitButton"
+    android:layout_width="80px" 
+    android:layout_height="wrap_content" 
+    android:layout_below="@id/verpwdText" 
+    android:layout_alignLeft="@id/verpwdText" 
+    android:text="Submit"
+    />
+</RelativeLayout>

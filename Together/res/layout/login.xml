@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg">
+
+    <ImageView 
+     android:id="@+id/imageview"
+     android:layout_height="wrap_content"
+     android:layout_width="wrap_content"
+     android:layout_centerHorizontal="true"
+     android:src="@drawable/logo">
+    </ImageView>
+    
+    
+    <EditText 
+    	android:id="@+id/idText" 
+    	android:layout_width="180px" 
+    	android:layout_height="wrap_content" 
+    	android:layout_below="@id/imageview" 
+    	android:layout_alignRight="@id/imageview"
+    />
+    <TextView 
+    	android:id="@+id/idLabel" 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:layout_below="@id/imageview" 
+    	android:layout_alignBaseline="@id/idText"
+    	android:layout_alignLeft="@id/imageview" 
+    	android:layout_toLeftOf="@id/idText" 
+    	android:text="ID: " 
+    	android:textColor="@color/black"
+    	android:gravity="right"
+    />
+    <EditText 
+    	android:id="@+id/pwdText"
+    	android:password="true" 
+    	android:layout_width="180px" 
+    	android:layout_height="wrap_content" 
+    	android:layout_below="@id/idText" 
+    	android:layout_alignRight="@id/idText"
+    />
+    <TextView 
+    	android:id="@+id/pwdLabel" 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:layout_below="@id/idLabel" 
+    	android:layout_alignLeft="@id/idLabel"
+    	android:layout_alignBaseline="@id/pwdText" 
+    	android:layout_toLeftOf="@id/pwdText" 
+    	android:text="Password: " 
+    	android:textColor="@color/black"
+    	android:gravity="right"
+    />
+    <Button
+    	android:id="@+id/loginButton"
+    	android:layout_width="125px" 
+    	android:layout_height="wrap_content" 
+    	android:layout_below="@id/pwdText" 
+    	android:layout_alignLeft="@id/pwdLabel" 
+    	android:text="Login" 
+    />
+    <Button
+    	android:id="@+id/signUpButton"
+    	android:layout_width="125px" 
+    	android:layout_height="wrap_content" 
+    	android:layout_below="@id/pwdText" 
+    	android:layout_alignRight="@id/pwdText"
+    	android:layout_toRightOf="@id/loginButton" 
+    	android:text="Sign Up" 
+    />
+    <Button
+    	android:id="@+id/introButton"
+    	android:layout_below="@+id/loginButton"
+    	android:layout_centerHorizontal="true"
+    	android:layout_width="250px"
+    	android:layout_height="wrap_content"
+    	android:text="Intro Page"
+    />	
+
+</RelativeLayout>

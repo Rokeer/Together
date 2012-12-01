@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent" 
+  android:layout_height="fill_parent"   
+  android:scrollbars="vertical" 
+  android:fadingEdge="vertical">
+<RelativeLayout
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/white">
+  <TextView
+  	android:id="@+id/title"
+  	android:text="Introduction"
+  	android:textColor="@color/blue"
+  	android:textSize="30sp"
+  	android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+  />
+  <TextView
+  	android:id="@+id/intro"
+  	android:text="@string/introduction"
+  	android:textColor="@color/blue"
+  	android:textSize="20sp"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_below="@id/title"
+  />
+  <TextView
+  	android:id="@+id/gps"
+  	android:text="GPS"
+  	android:textColor="@color/blue"
+  	android:textSize="30sp"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_below="@id/intro"
+  	android:gravity="center_horizontal"
+  />
+  <TextView
+  	android:id="@+id/gps_intro"
+  	android:text="The Global Positioning System (GPS) is a space-based global navigation satellite system (GNSS) that provides reliable location and time information in all weather and at all times and anywhere on or near the Earth when and where there is an unobstructed line of sight to four or more GPS satellites."
+  	android:textColor="@color/blue"
+  	android:textSize="20sp"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_below="@id/gps"
+  	android:layout_alignParentLeft="true"
+  />
+  <TextView
+  	android:id="@+id/multi"
+  	android:text="Multi-touch"
+  	android:textColor="@color/blue"
+  	android:textSize="30sp"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_below="@id/gps_intro"
+  	android:gravity="center_horizontal"
+  />
+  <TextView
+  	android:id="@+id/multi_intro"
+  	android:text="Multi-touch refers to the ability to simultaneously register three or more distinct positions of input touches."
+  	android:textColor="@color/blue"
+  	android:textSize="20sp"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_below="@id/multi"
+  	android:layout_alignParentLeft="true"
+  />
+</RelativeLayout>
+</ScrollView>

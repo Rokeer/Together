@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.quardroiders"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".LoginActivity"
+                  android:label="@string/app_name"
+                  android:theme="@style/XTheme">
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity android:name=".MainActivity"
+				  android:label="@string/app_name"
+				  android:theme="@style/XTheme">
+		</activity>
+   		<activity android:name=".AllWordsListActivity"
+   				  android:label="All Words">
+   		</activity>
+   		<activity android:name=".PersonalWordsListActivity"
+   				  android:label="Personal Words">
+   		</activity>
+   		<activity android:name=".MapMarkerActivity"
+   				  android:label="Show Friends locations on the Google Maps"
+   				  android:theme="@style/XTheme">
+   		</activity>
+   		<activity android:name=".FriendsListActivity"
+   				  android:label="Friends List"
+   				  android:theme="@style/XTheme">
+   		</activity>
+   		<activity android:name=".BlockedsListActivity"
+   				  android:label="Black List"
+   				  android:theme="@style/XTheme">
+   		</activity>
+   		<activity android:name=".ChangeAccountActivity"
+   				  android:label="Change Account"
+   				  android:theme="@style/XTheme">
+   		</activity>
+   		<activity android:name=".SignUpActivity"
+   				  android:label="Sign Up"
+   				  android:theme="@style/XTheme">
+   		</activity>
+   		<activity android:name=".InputMSGActivity"
+   				  android:label="What you want to share"
+   				  android:theme="@style/XTheme">
+   		</activity>
+   		<activity android:name=".IntroActivity"
+   				  android:label="Introdcion"
+   				  android:theme="@style/XTheme">
+   		</activity>
+    <uses-library android:required="true" android:name="com.google.android.maps"></uses-library>
+	</application>
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+</manifest> 

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Welcome to Together!</string>
+    <string name="app_name">Together</string>
+    <string name="introduction">The features of M8/M9 that our app highlights
+     are GPS and multi-touch screen.
+    </string>
+</resources>
